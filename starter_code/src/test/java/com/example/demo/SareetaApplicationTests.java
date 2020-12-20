@@ -44,13 +44,13 @@ public class SareetaApplicationTests {
 	}
 
 	@Test
-	public void createUserHappyPath() throws Exception {
-		when(encoder.encode("test1234")).thenReturn("thisIsHashed");
+	public void createUser() throws Exception {
+		when(encoder.encode("password123456")).thenReturn("hashed");
 
 		CreateUserRequest createUserRequest = new CreateUserRequest();
 		createUserRequest.setUsername("test");
-		createUserRequest.setPassword("test1234");
-		createUserRequest.setConfirmedPassword("test1234");
+		createUserRequest.setPassword("password123456");
+		createUserRequest.setConfirmedPassword("password123456");
 
 		final ResponseEntity<User> response = userController.createUser(createUserRequest);
 
@@ -61,15 +61,15 @@ public class SareetaApplicationTests {
 		assertNotNull(user);
 		assertEquals(0, user.getId());
 		assertEquals("test", user.getUsername());
-		assertEquals("thisIsHashed", user.getPassword());
+		assertEquals("hashed", user.getPassword());
 	}
 
 	@Test
-	public void getUserByIdHappyPath() throws Exception {
+	public void getUserById() throws Exception {
 
 		User user = new User();
 		user.setUsername("test");
-		user.setPassword("test1234");
+		user.setPassword("password123456");
 
 		when(userRepository.findById(0L)).thenReturn(java.util.Optional.of(user));
 
@@ -89,7 +89,7 @@ public class SareetaApplicationTests {
 
 		User user = new User();
 		user.setUsername("test");
-		user.setPassword("test1234");
+		user.setPassword("password123456");
 
 		when(userRepository.findByUsername("test")).thenReturn(user);
 
@@ -99,7 +99,6 @@ public class SareetaApplicationTests {
 		User userResponse = response.getBody();
 		assertNotNull(userResponse);
 
-		assertEquals(user.getId(), userResponse.getId());
 		assertEquals(user.getUsername(), userResponse.getUsername());
 		assertEquals(user.getPassword(), userResponse.getPassword());
 	}
