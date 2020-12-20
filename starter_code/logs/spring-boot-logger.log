@@ -1,0 +1,25 @@
+2020-12-20 20:58:16,219 INFO org.springframework.boot.StartupInfoLogger [main] Starting SareetaApplicationTests on LAPTOP-MEJ50RGA with PID 8180 (started by getso in C:\Users\getso\Documents\Courses\Udacity_Nano\Java\Projects\Project4\nd035-c4-Security-and-DevOps\starter_code)
+2020-12-20 20:58:16,228 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-12-20 20:58:16,789 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-12-20 20:58:16,850 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 50ms. Found 4 repository interfaces.
+2020-12-20 20:58:17,396 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9c208e83] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-20 20:58:17,611 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2020-12-20 20:58:17,790 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2020-12-20 20:58:17,876 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-12-20 20:58:17,954 INFO org.hibernate.Version [main] HHH000412: Hibernate Core {5.3.10.Final}
+2020-12-20 20:58:17,957 INFO org.hibernate.cfg.Environment [main] HHH000206: hibernate.properties not found
+2020-12-20 20:58:18,005 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-12-20 20:58:18,214 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-12-20 20:58:18,764 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-12-20 20:58:19,543 INFO org.springframework.security.web.DefaultSecurityFilterChain [main] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@30adae45, org.springframework.security.web.context.SecurityContextPersistenceFilter@4407fea2, org.springframework.security.web.header.HeaderWriterFilter@39296cef, org.springframework.web.filter.CorsFilter@792eeae6, org.springframework.security.web.authentication.logout.LogoutFilter@52f118aa, com.example.demo.security.JWTAuthenticationFilter@66e62fc4, com.example.demo.security.JWTAuthenticationVerficationFilter@7e28f150, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4714f447, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@f310675, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@23aaa756, org.springframework.security.web.session.SessionManagementFilter@7771c4e, org.springframework.security.web.access.ExceptionTranslationFilter@406808eb, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4a094f90]
+2020-12-20 20:58:20,115 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-20 20:58:20,198 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-12-20 20:58:20,635 INFO org.springframework.boot.StartupInfoLogger [main] Started SareetaApplicationTests in 4.713 seconds (JVM running for 5.929)
+2020-12-20 20:58:20,692 INFO com.example.demo.controllers.UserController [main] New user create request for test
+2020-12-20 20:58:20,693 INFO com.example.demo.controllers.UserController [main] User creation for  test is a success
+2020-12-20 20:58:20,740 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-2] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-20 20:58:20,743 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-2] Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-12-20 20:58:20,747 INFO com.zaxxer.hikari.HikariDataSource [Thread-2] HikariPool-1 - Shutdown initiated...
+2020-12-20 20:58:20,750 INFO com.zaxxer.hikari.HikariDataSource [Thread-2] HikariPool-1 - Shutdown completed.
