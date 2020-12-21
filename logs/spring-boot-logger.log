@@ -1,35 +1,35 @@
-2020-12-20 19:50:03,013 INFO org.springframework.boot.StartupInfoLogger [main] Starting SareetaApplication on LAPTOP-MEJ50RGA with PID 22852 (C:\Users\getso\Documents\Courses\Udacity_Nano\Java\Projects\Project4\nd035-c4-Security-and-DevOps\starter_code\target\classes started by getso in C:\Users\getso\Documents\Courses\Udacity_Nano\Java\Projects\Project4\nd035-c4-Security-and-DevOps)
-2020-12-20 19:50:03,016 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
-2020-12-20 19:50:03,755 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data repositories in DEFAULT mode.
-2020-12-20 19:50:03,829 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 56ms. Found 4 repository interfaces.
-2020-12-20 19:50:04,345 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$be99575] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-12-20 19:50:04,645 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
-2020-12-20 19:50:04,664 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
-2020-12-20 19:50:04,679 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
-2020-12-20 19:50:04,680 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.19]
-2020-12-20 19:50:04,815 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
-2020-12-20 19:50:04,816 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1740 ms
-2020-12-20 19:50:04,996 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
-2020-12-20 19:50:05,137 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2020-12-20 19:50:05,192 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [
+2020-12-21 21:39:17,536 INFO org.springframework.boot.StartupInfoLogger [main] Starting SareetaApplication on LAPTOP-MEJ50RGA with PID 12772 (C:\Users\getso\Documents\Courses\Udacity_Nano\Java\Projects\Project4\nd035-c4-Security-and-DevOps\starter_code\target\classes started by getso in C:\Users\getso\Documents\Courses\Udacity_Nano\Java\Projects\Project4\nd035-c4-Security-and-DevOps)
+2020-12-21 21:39:17,541 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-12-21 21:39:18,268 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-12-21 21:39:18,345 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 59ms. Found 4 repository interfaces.
+2020-12-21 21:39:18,854 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b68eea5d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-21 21:39:19,185 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2020-12-21 21:39:19,199 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2020-12-21 21:39:19,210 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2020-12-21 21:39:19,211 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.19]
+2020-12-21 21:39:19,347 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2020-12-21 21:39:19,347 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1755 ms
+2020-12-21 21:39:19,530 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2020-12-21 21:39:19,690 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2020-12-21 21:39:19,752 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [
 	name: default
 	...]
-2020-12-20 19:50:05,276 INFO org.hibernate.Version [main] HHH000412: Hibernate Core {5.3.10.Final}
-2020-12-20 19:50:05,278 INFO org.hibernate.cfg.Environment [main] HHH000206: hibernate.properties not found
-2020-12-20 19:50:05,413 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
-2020-12-20 19:50:05,536 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2020-12-20 19:50:06,244 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2020-12-20 19:50:06,778 INFO org.springframework.security.web.DefaultSecurityFilterChain [main] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@45295cfd, org.springframework.security.web.context.SecurityContextPersistenceFilter@1c66cd02, org.springframework.security.web.header.HeaderWriterFilter@36cdcae0, org.springframework.web.filter.CorsFilter@42c9b1ee, org.springframework.security.web.authentication.logout.LogoutFilter@1e36baca, com.example.demo.security.JWTAuthenticationFilter@217c6a1e, com.example.demo.security.JWTAuthenticationVerficationFilter@3fad8636, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@35cf91df, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@355b53cc, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@306cfb8a, org.springframework.security.web.session.SessionManagementFilter@73db7df0, org.springframework.security.web.access.ExceptionTranslationFilter@64a8d575, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5b6f3d0b]
-2020-12-20 19:50:06,937 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
-2020-12-20 19:50:06,986 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2020-12-20 19:50:07,184 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
-2020-12-20 19:50:07,211 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
-2020-12-20 19:50:07,215 INFO org.springframework.boot.StartupInfoLogger [main] Started SareetaApplication in 4.632 seconds (JVM running for 5.01)
-2020-12-20 19:53:38,132 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-12-20 19:53:38,132 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
-2020-12-20 19:53:38,139 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Completed initialization in 6 ms
-2020-12-20 19:53:38,221 INFO com.example.demo.controllers.UserController [http-nio-8080-exec-2] New user create request for test
-2020-12-20 19:53:38,337 INFO com.example.demo.controllers.UserController [http-nio-8080-exec-2] User creation for  test is a success
-2020-12-20 19:53:41,689 INFO org.hibernate.hql.internal.QueryTranslatorFactoryInitiator [http-nio-8080-exec-3] HHH000397: Using ASTQueryTranslatorFactory
-2020-12-20 19:59:43,492 INFO com.example.demo.controllers.UserController [http-nio-8080-exec-8] New user create request for test
-2020-12-20 19:59:43,497 ERROR com.example.demo.controllers.UserController [http-nio-8080-exec-8] Password doesn't match requirements (Min char 8). User test could not be created.
+2020-12-21 21:39:19,815 INFO org.hibernate.Version [main] HHH000412: Hibernate Core {5.3.10.Final}
+2020-12-21 21:39:19,817 INFO org.hibernate.cfg.Environment [main] HHH000206: hibernate.properties not found
+2020-12-21 21:39:19,945 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-12-21 21:39:20,069 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-12-21 21:39:20,762 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-12-21 21:39:21,416 INFO org.springframework.security.web.DefaultSecurityFilterChain [main] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5cc669d, org.springframework.security.web.context.SecurityContextPersistenceFilter@760c777d, org.springframework.security.web.header.HeaderWriterFilter@531299d3, org.springframework.web.filter.CorsFilter@351be56b, org.springframework.security.web.authentication.logout.LogoutFilter@24f2608b, com.example.demo.security.JWTAuthenticationFilter@212c0aff, com.example.demo.security.JWTAuthenticationVerficationFilter@21780905, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1aef7428, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3e1897d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@47666b39, org.springframework.security.web.session.SessionManagementFilter@77226121, org.springframework.security.web.access.ExceptionTranslationFilter@254cc548, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1abbc1d4]
+2020-12-21 21:39:21,579 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-21 21:39:21,623 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-12-21 21:39:21,863 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2020-12-21 21:39:21,890 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-21 21:39:21,892 INFO org.springframework.boot.StartupInfoLogger [main] Started SareetaApplication in 4.771 seconds (JVM running for 5.178)
+2020-12-21 21:39:35,309 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-21 21:39:35,310 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2020-12-21 21:39:35,318 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Completed initialization in 8 ms
+2020-12-21 21:39:35,400 INFO com.example.demo.controllers.UserController [http-nio-8080-exec-2] New user create request for test
+2020-12-21 21:39:35,430 ERROR com.example.demo.controllers.UserController [http-nio-8080-exec-2] Password doesn't match requirements (Min char 8). User test could not be created.
+2020-12-21 21:39:52,115 INFO com.example.demo.controllers.UserController [http-nio-8080-exec-4] New user create request for test
+2020-12-21 21:39:52,191 INFO com.example.demo.controllers.UserController [http-nio-8080-exec-4] User creation for  test is a success
+2020-12-21 21:39:58,123 INFO org.hibernate.hql.internal.QueryTranslatorFactoryInitiator [http-nio-8080-exec-5] HHH000397: Using ASTQueryTranslatorFactory
