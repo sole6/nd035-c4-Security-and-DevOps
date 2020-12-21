@@ -50,10 +50,12 @@ public class CartControllerTests {
     public static void init() {
 
         user = new User();
+        user.setId(0L);
         user.setUsername("test");
         user.setPassword("password123456");
 
         item = new Item();
+        item.setId(0L);
         item.setPrice(new BigDecimal("100"));
         item.setName("Item1");
         item.setDescription("Item1 descr");
@@ -77,8 +79,8 @@ public class CartControllerTests {
 
         ModifyCartRequest request = new ModifyCartRequest();
         request.setItemId(item.getId());
-        request.setQuantity(300);
         request.setUsername(user.getUsername());
+        request.setQuantity(300);
 
         final ResponseEntity<Cart> res = cartController.addTocart(request);
 

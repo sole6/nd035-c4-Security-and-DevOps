@@ -1202,3 +1202,47 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No q
 	name: default
 	...]
 2020-12-21 21:31:33,328 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-12-21 21:31:33,451 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-12-21 21:31:33,757 INFO org.springframework.security.web.DefaultSecurityFilterChain [main] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@27244a88, org.springframework.security.web.context.SecurityContextPersistenceFilter@3d96b8fb, org.springframework.security.web.header.HeaderWriterFilter@20524816, org.springframework.web.filter.CorsFilter@4a76c90, org.springframework.security.web.authentication.logout.LogoutFilter@20843604, com.example.demo.security.JWTAuthenticationFilter@6a233d33, com.example.demo.security.JWTAuthenticationVerficationFilter@7da0587a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1d208795, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2f006edf, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@78d52d4c, org.springframework.security.web.session.SessionManagementFilter@6a7cbeed, org.springframework.security.web.access.ExceptionTranslationFilter@29612ee2, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2c376461]
+2020-12-21 21:31:34,020 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-21 21:31:34,034 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-12-21 21:31:34,299 INFO org.springframework.mock.web.MockServletContext [main] Initializing Spring TestDispatcherServlet ''
+2020-12-21 21:31:34,300 INFO org.springframework.web.servlet.FrameworkServlet [main] Initializing Servlet ''
+2020-12-21 21:31:34,314 INFO org.springframework.web.servlet.FrameworkServlet [main] Completed initialization in 14 ms
+2020-12-21 21:31:34,329 INFO org.springframework.boot.StartupInfoLogger [main] Started SareetaApplicationTests in 1.433 seconds (JVM running for 7.616)
+2020-12-21 21:31:34,440 INFO com.example.demo.controllers.UserController [main] New user create request for test
+2020-12-21 21:31:34,596 INFO com.example.demo.controllers.UserController [main] User creation for  test is a success
+2020-12-21 21:31:34,713 INFO org.hibernate.hql.internal.QueryTranslatorFactoryInitiator [main] HHH000397: Using ASTQueryTranslatorFactory
+2020-12-21 21:31:34,944 INFO com.example.demo.controllers.UserController [main] New user create request for test
+2020-12-21 21:31:34,945 INFO com.example.demo.controllers.UserController [main] User creation for  test is a success
+2020-12-21 21:31:34,956 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-2] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-21 21:31:34,956 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-5] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-21 21:31:34,958 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-5] Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-12-21 21:31:34,958 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-2] Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-12-21 21:31:34,962 INFO com.zaxxer.hikari.HikariDataSource [Thread-2] HikariPool-1 - Shutdown initiated...
+2020-12-21 21:31:34,962 INFO com.zaxxer.hikari.HikariDataSource [Thread-5] HikariPool-2 - Shutdown initiated...
+2020-12-21 21:31:34,965 INFO com.zaxxer.hikari.HikariDataSource [Thread-5] HikariPool-2 - Shutdown completed.
+2020-12-21 21:31:34,965 INFO com.zaxxer.hikari.HikariDataSource [Thread-2] HikariPool-1 - Shutdown completed.
+2020-12-21 21:32:05,108 INFO org.springframework.boot.StartupInfoLogger [main] Starting CartControllerTests on LAPTOP-MEJ50RGA with PID 23392 (started by getso in C:\Users\getso\Documents\Courses\Udacity_Nano\Java\Projects\Project4\nd035-c4-Security-and-DevOps\starter_code)
+2020-12-21 21:32:05,109 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-12-21 21:32:05,681 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-12-21 21:32:05,744 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 56ms. Found 4 repository interfaces.
+2020-12-21 21:32:06,244 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$69ba65d6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-21 21:32:06,448 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2020-12-21 21:32:06,622 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2020-12-21 21:32:06,700 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-12-21 21:32:06,767 INFO org.hibernate.Version [main] HHH000412: Hibernate Core {5.3.10.Final}
+2020-12-21 21:32:06,769 INFO org.hibernate.cfg.Environment [main] HHH000206: hibernate.properties not found
+2020-12-21 21:32:06,813 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-12-21 21:32:07,007 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-12-21 21:32:07,514 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-12-21 21:32:08,204 INFO org.springframework.security.web.DefaultSecurityFilterChain [main] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@28d16af8, org.springframework.security.web.context.SecurityContextPersistenceFilter@27bf574b, org.springframework.security.web.header.HeaderWriterFilter@5c03eb4e, org.springframework.web.filter.CorsFilter@58932d08, org.springframework.security.web.authentication.logout.LogoutFilter@472dbaf5, com.example.demo.security.JWTAuthenticationFilter@45648e75, com.example.demo.security.JWTAuthenticationVerficationFilter@e344f14, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@647aa45c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2e09e367, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2d117280, org.springframework.security.web.session.SessionManagementFilter@1e836aed, org.springframework.security.web.access.ExceptionTranslationFilter@5b657342, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4d93e5bf]
+2020-12-21 21:32:08,756 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-21 21:32:08,813 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-12-21 21:32:09,194 INFO org.springframework.boot.StartupInfoLogger [main] Started CartControllerTests in 4.352 seconds (JVM running for 5.742)
+2020-12-21 21:32:09,246 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-2] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-21 21:32:09,249 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-2] Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-12-21 21:32:09,251 INFO com.zaxxer.hikari.HikariDataSource [Thread-2] HikariPool-1 - Shutdown initiated...
+2020-12-21 21:32:09,254 INFO com.zaxxer.hikari.HikariDataSource [Thread-2] HikariPool-1 - Shutdown completed.
