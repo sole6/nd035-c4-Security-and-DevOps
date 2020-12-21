@@ -8,10 +8,19 @@ import com.example.demo.model.requests.CreateUserRequest;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
+import org.springframework.mock.web.MockHttpServletResponse;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.test.context.junit4.SpringRunner;
+import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.test.web.servlet.MvcResult;
+import org.springframework.test.web.servlet.RequestBuilder;
+import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 
 import java.lang.reflect.Field;
 
@@ -22,11 +31,15 @@ import static org.mockito.Mockito.when;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
+@AutoConfigureMockMvc
 public class SareetaApplicationTests {
 
 	@Test
 	public void contextLoads() {
 	}
+	@Autowired
+	private MockMvc mvc;
+
 	private UserController userController;
 
 	private UserRepository userRepository = mock(UserRepository.class);
@@ -62,14 +75,46 @@ public class SareetaApplicationTests {
 		assertEquals(0, user.getId());
 		assertEquals("test", user.getUsername());
 		assertEquals("hashed", user.getPassword());
+
 	}
 
+
+	@Test
+	public void authentication() throws Exception {
+		when(encoder.encode("password123456")).thenReturn("hashed");
+
+		String body1 = "{\"username\":\"test\",\"password\":\"password123456\", \"confirmedPassword\":\"password123456\"}";
+
+		RequestBuilder requestBuilder1 = MockMvcRequestBuilders
+				.post("/api/user/create")
+				.accept(MediaType.APPLICATION_JSON).content(body1)
+				.contentType(MediaType.APPLICATION_JSON);
+		MvcResult result1 = mvc.perform(requestBuilder1).andReturn();
+
+		MockHttpServletResponse response1 = result1.getResponse();
+
+		assertEquals(HttpStatus.OK.value(), response1.getStatus());
+
+		String body = "{\"username\":\"test\",\"password\":\"password123456\"}";
+
+		RequestBuilder requestBuilder = MockMvcRequestBuilders
+				.post("/login")
+				.accept(MediaType.APPLICATION_JSON).content(body)
+				.contentType(MediaType.APPLICATION_JSON);
+		MvcResult result = mvc.perform(requestBuilder).andReturn();
+
+		MockHttpServletResponse response2 = result.getResponse();
+
+		assertEquals(HttpStatus.OK.value(), response2.getStatus());
+	}
 	@Test
 	public void getUserById() throws Exception {
 
 		User user = new User();
-		user.setUsername("test");
-		user.setPassword("password123456");
+		String username = "test";
+		String password = "password123456";
+		user.setUsername(username);
+		user.setPassword(password);
 
 		when(userRepository.findById(0L)).thenReturn(java.util.Optional.of(user));
 
@@ -82,6 +127,7 @@ public class SareetaApplicationTests {
 		assertEquals(user.getId(), userResponse.getId());
 		assertEquals(user.getUsername(), userResponse.getUsername());
 		assertEquals(user.getPassword(), userResponse.getPassword());
+
 	}
 
 	@Test
